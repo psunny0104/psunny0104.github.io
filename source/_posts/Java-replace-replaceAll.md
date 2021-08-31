@@ -3,7 +3,7 @@ title: '[Java] replace(), replaceAll() 의 차이'
 date: 2021-08-27 13:11:15
 tags: ['Java']
 categories: ['Languages', 'Java']
-comments: true
+excerpt: 'java.lang.String의 replace(), replaceAll()'
 ---
 
 # java.lang.String의 replace(), replaceAll()
