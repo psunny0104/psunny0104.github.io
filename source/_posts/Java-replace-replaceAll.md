@@ -33,7 +33,7 @@ replace()는 2개로 overloading되어 있다.
 
 - `returns`
 
-  - : `String` - String에 존재하는 모든 oldChar를 newChar로 바꾼 String
+  - `String` - String에 존재하는 모든 oldChar를 newChar로 바꾼 String
 
 - `examples`
 
@@ -57,7 +57,7 @@ char 단위로도 변환을 할 수 있으며, 존재하는 모든 oldChar를 ne
 
 - `returns`
 
-  - : `String` - String에 존재하는 모든 target을 replacement로 바꾼 String
+  - `String` - String에 존재하는 모든 target을 replacement로 바꾼 String
 
 - `examples`
 
@@ -83,7 +83,7 @@ char 단위가 아니라 charSequence에 대해서 당연히 가능하다. 따�
 
 - `returns`
 
-  - : `String` - regex에 매치되는 모든 substring을 replacement로 바꾼 String
+  - `String` - regex에 매치되는 모든 substring을 replacement로 바꾼 String
 
 - `examples`
 
