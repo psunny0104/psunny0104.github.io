@@ -1606,7 +1606,7 @@ pre code {
   white-space: nowrap;
 }
 .post-toc .nav .nav-child {
-  display: none;
+  display: block;
 }
 .post-toc .nav .active > .nav-child {
   display: block;
@@ -1810,6 +1810,16 @@ pre code {
   top: 0;
   width: 100%;
   z-index: 1500;
+}
+.reading-progress-bar {
+  --progress: 0;
+  background: #F51720;
+  height: 5px;
+  position: fixed;
+  z-index: 1500;
+  width: var(--progress);
+  left: 0;
+  top: 0;
 }
 .rtl.post-body p,
 .rtl.post-body a,
