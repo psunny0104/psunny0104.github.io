@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"psunny0104.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":null,"lazyload":false,"nav":null,"activeClass":"utterances"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"psunny0104.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":null,"lazyload":false,"nav":null,"activeClass":"utterances"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta name="description" content="java.lang.String의 replace(), replaceAll()코딩테스트 연습 - 숫자 문자열과 영단어 프로그래머스에서 위의 링크에 있는 문제를 풀었다. 구현해야할 핵심 사항은 0 ~ 9가 아니라 ‘one’, ‘eight’ 처럼 숫자를 나타내는 문자열이 존재하는 경우 해당하는 숫자로 바꾸는 것이었다.  주어진 문자열을 선형탐색하면서 숫자가 아닌">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Java] replace(), replaceAll() 의차이">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="java.lang.String의 replace(), replaceAll()코딩테스트 연습 - 숫자 문자열과 영단어 프로그래머스에서 위의 링크에 있는 문제를 풀었다. 구현해야할 핵심 사항은 0 ~ 9가 아니라 ‘one’, ‘eight’ 처럼 숫자를 나타내는 문자열이 존재하는 경우 해당하는 숫자로 바꾸는 것이었다.  주어진 문자열을 선형탐색하면서 숫자가 아닌">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-31T13:11:15.000Z">
-<meta property="article:modified_time" content="2021-08-31T05:20:02.554Z">
+<meta property="article:modified_time" content="2021-08-31T05:37:29.207Z">
 <meta property="article:author" content="psunny0104">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -121,7 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java-lang-String%EC%9D%98-replace-replaceAll"><span class="nav-number">1.</span> <span class="nav-text">java.lang.String의 replace(), replaceAll()</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-replace"><span class="nav-number">1.1.</span> <span class="nav-text">1. replace()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#public-String-replace-char-oldChar-char-newChar"><span class="nav-number">1.1.1.</span> <span class="nav-text">public String replace(char oldChar, char newChar)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#public-String-replace-CharSequence-target-CharSequence-replacement"><span class="nav-number">1.1.2.</span> <span class="nav-text">public String replace(CharSequence target, CharSequence replacement)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-replaceAll"><span class="nav-number">1.2.</span> <span class="nav-text">2. replaceAll()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#replaceAll-String-regex-String-replacement"><span class="nav-number">1.2.1.</span> <span class="nav-text">replaceAll(String regex, String replacement)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#replaceFirst-String-regex-String-replacement"><span class="nav-number">1.2.2.</span> <span class="nav-text">replaceFirst(String regex, String replacement)</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java-lang-String%EC%9D%98-replace-replaceAll"><span class="nav-number">1.</span> <span class="nav-text">java.lang.String의 replace(), replaceAll()</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#replace"><span class="nav-number">1.1.</span> <span class="nav-text">replace()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#public-String-replace-char-oldChar-char-newChar"><span class="nav-number">1.1.1.</span> <span class="nav-text">public String replace(char oldChar, char newChar)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#public-String-replace-CharSequence-target-CharSequence-replacement"><span class="nav-number">1.1.2.</span> <span class="nav-text">public String replace(CharSequence target, CharSequence replacement)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#replaceAll"><span class="nav-number">1.2.</span> <span class="nav-text">replaceAll()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#replaceAll-String-regex-String-replacement"><span class="nav-number">1.2.1.</span> <span class="nav-text">replaceAll(String regex, String replacement)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#replaceFirst-String-regex-String-replacement"><span class="nav-number">1.2.2.</span> <span class="nav-text">replaceFirst(String regex, String replacement)</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -221,7 +221,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-08-31 13:11:15 / Modified: 05:20:02" itemprop="dateCreated datePublished" datetime="2021-08-31T13:11:15+00:00">2021-08-31</time>
+      <time title="Created: 2021-08-31 13:11:15 / Modified: 05:37:29" itemprop="dateCreated datePublished" datetime="2021-08-31T13:11:15+00:00">2021-08-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -253,7 +253,7 @@
 <p>문제를 풀고 나서 다른 분들의 풀이를 보았는데 매우 간략하게 잘 푸신 분들이 많았다. 그 중 특이한 점은 replaceAll()과 replace()를 사용한 풀이가 비슷한 비율로 존재했다는 것이다. 그런데 생각해보니 replace()도 분명히 메소드를 호출한 String에서 인자로 들어온 대상을 모두 바꿨던 것 같은 기억이 났다. 그래서 replaceAll()로 작성된 풀이를 replace()로 바꿔서 제출해도 모두 합격이 되는 것이다!</p>
 <p>그래서 replace()와 replaceAll() 메소드와 차이점이 확실히 무엇인지 궁금하다는 생각을 했고 Java API 공식문서를 찾아보았다.</p>
 <hr>
-<h2 id="1-replace"><a href="#1-replace" class="headerlink" title="1. replace()"></a>1. replace()</h2><p>replace()는 2개로 overloading되어 있다.</p>
+<h2 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h2><p>replace()는 2개로 overloading되어 있다.</p>
 <h3 id="public-String-replace-char-oldChar-char-newChar"><a href="#public-String-replace-char-oldChar-char-newChar" class="headerlink" title="public String replace(char oldChar, char newChar)"></a>public String replace(char oldChar, char newChar)</h3><ul>
 <li><p><code>parameters</code></p>
 <ul>
@@ -296,7 +296,7 @@
 <span class="token comment">// HeLLo HeLLo new World</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <p>char 단위가 아니라 charSequence에 대해서 당연히 가능하다. 따라서 연속적인 문자열에도 적용이 가능하다. 참고로 <code>charSequence</code>는 String, StringBuffer, StringBuilder, CharBuffer 등이 implement 하는데 사용하고 있는 Interface이다. 이름 처럼 char값들을 sequence 형태로 읽을 수 있도록 제공하는데 별도로 정리를 해야할 것 같다.</p>
-<h2 id="2-replaceAll"><a href="#2-replaceAll" class="headerlink" title="2. replaceAll()"></a>2. replaceAll()</h2><h3 id="replaceAll-String-regex-String-replacement"><a href="#replaceAll-String-regex-String-replacement" class="headerlink" title="replaceAll(String regex, String replacement)"></a>replaceAll(String regex, String replacement)</h3><ul>
+<h2 id="replaceAll"><a href="#replaceAll" class="headerlink" title="replaceAll()"></a>replaceAll()</h2><h3 id="replaceAll-String-regex-String-replacement"><a href="#replaceAll-String-regex-String-replacement" class="headerlink" title="replaceAll(String regex, String replacement)"></a>replaceAll(String regex, String replacement)</h3><ul>
 <li><p><code>parameters</code></p>
 <ul>
 <li><strong>regex</strong> :<code>String</code> - replace의 대상이 되는 charSequence</li>
