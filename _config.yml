@@ -77,6 +77,22 @@ search:
   content: true
   format: html
   
+# Feed
+feed:
+  # Generate both atom and rss2 feeds
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+
+# Sitemap
+sitemap:
+    path: sitemap.xml
+    tag: true
+    category: true
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
