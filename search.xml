@@ -19,7 +19,7 @@
 </li>
 <li><p><code>returns</code></p>
 <ul>
-<li>: <code>String</code> - String에 존재하는 모든 oldChar를 newChar로 바꾼 String</li>
+<li><code>String</code> - String에 존재하는 모든 oldChar를 newChar로 바꾼 String</li>
 </ul>
 </li>
 <li><p><code>examples</code></p>
@@ -40,7 +40,7 @@
 </li>
 <li><p><code>returns</code></p>
 <ul>
-<li>: <code>String</code> - String에 존재하는 모든 target을 replacement로 바꾼 String</li>
+<li><code>String</code> - String에 존재하는 모든 target을 replacement로 바꾼 String</li>
 </ul>
 </li>
 <li><p><code>examples</code></p>
@@ -61,7 +61,7 @@
 </li>
 <li><p><code>returns</code></p>
 <ul>
-<li>: <code>String</code> - regex에 매치되는 모든 substring을 replacement로 바꾼 String</li>
+<li><code>String</code> - regex에 매치되는 모든 substring을 replacement로 바꾼 String</li>
 </ul>
 </li>
 <li><p><code>examples</code></p>
