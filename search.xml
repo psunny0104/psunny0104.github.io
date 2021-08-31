@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>[Java] replace(), replaceAll() 의 차이</title>
-    <url>/2021/08/27/Java-replace-replaceAll/</url>
+    <url>/2021/08/27/java-replace-replace-all/</url>
     <content><![CDATA[<h1 id="java-lang-String의-replace-replaceAll"><a href="#java-lang-String의-replace-replaceAll" class="headerlink" title="java.lang.String의 replace(), replaceAll()"></a>java.lang.String의 replace(), replaceAll()</h1><p><a href="https://programmers.co.kr/learn/courses/30/lessons/81301">코딩테스트 연습 - 숫자 문자열과 영단어</a></p>
 <p>프로그래머스에서 위의 링크에 있는 문제를 풀었다. 구현해야할 핵심 사항은 0 ~ 9가 아니라 ‘one’, ‘eight’ 처럼 숫자를 나타내는 문자열이 존재하는 경우 해당하는 숫자로 바꾸는 것이었다. </p>
 <p>주어진 문자열을 선형탐색하면서 숫자가 아닌 문자가 나오면 매칭되는 숫자가 나올 때까지 별도의 index 변수와 while을 이용해서 내부에서도 선형탐색을 하는 방법으로 풀었다.</p>

@@ -9,13 +9,13 @@
     <atom:link href="https://psunny0104.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Software Engineer</description>
-    <pubDate>Tue, 31 Aug 2021 14:53:20 GMT</pubDate>
+    <pubDate>Tue, 31 Aug 2021 14:54:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>[Java] replace(), replaceAll() 의 차이</title>
-      <link>https://psunny0104.github.io/2021/08/27/Java-replace-replaceAll/</link>
-      <guid>https://psunny0104.github.io/2021/08/27/Java-replace-replaceAll/</guid>
+      <link>https://psunny0104.github.io/2021/08/27/java-replace-replace-all/</link>
+      <guid>https://psunny0104.github.io/2021/08/27/java-replace-replace-all/</guid>
       <pubDate>Fri, 27 Aug 2021 13:11:15 GMT</pubDate>
       
       <description>java.lang.String의 replace(), replaceAll()</description>
@@ -33,7 +33,7 @@
       <category domain="https://psunny0104.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://psunny0104.github.io/2021/08/27/Java-replace-replaceAll/#disqus_thread</comments>
+      <comments>https://psunny0104.github.io/2021/08/27/java-replace-replace-all/#disqus_thread</comments>
       
     </item>
     
