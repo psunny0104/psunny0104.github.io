@@ -1,6 +1,6 @@
 ---
-title: '[Java] replace(), replaceAll() 의차이'
-date: 2021-08-31 13:11:15
+title: '[Java] replace(), replaceAll() 의 차이'
+date: 2021-08-27 13:11:15
 tags: ['Java']
 categories: ['Languages', 'Java']
 comments: true
@@ -104,6 +104,7 @@ char 단위가 아니라 charSequence에 대해서 당연히 가능하다. 따�
 
 당연한 이야기이지만 replace에 정규표현식처럼 [a-z]를 target 파라미터로 주면 charSequence이기 때문에 "[a-z]"와 일치하는 문자열을 찾아 바꾸게 된다. "Hello Hello new World"에는 "[a-z]"가 없기 때문에 당연히 그대로 리턴하게 된다.
 
+- replaceAll()
 ```java
 // replaceAll
 
@@ -112,6 +113,7 @@ public String replaceAll(String regex, String replacement) {
     }
 ```
 
+- replace()
 ```java
 // replace
 
