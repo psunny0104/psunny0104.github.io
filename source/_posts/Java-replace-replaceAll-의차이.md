@@ -20,7 +20,7 @@ comments: true
 
 ---
 
-## 1. replace()
+## replace()
 
 replace()는 2개로 overloading되어 있다.
 
@@ -72,7 +72,7 @@ char 단위로도 변환을 할 수 있으며, 존재하는 모든 oldChar를 ne
 
 char 단위가 아니라 charSequence에 대해서 당연히 가능하다. 따라서 연속적인 문자열에도 적용이 가능하다. 참고로 `charSequence`는 String, StringBuffer, StringBuilder, CharBuffer 등이 implement 하는데 사용하고 있는 Interface이다. 이름 처럼 char값들을 sequence 형태로 읽을 수 있도록 제공하는데 별도로 정리를 해야할 것 같다.
 
-## 2. replaceAll()
+## replaceAll()
 
 ### replaceAll(String regex, String replacement)
 
