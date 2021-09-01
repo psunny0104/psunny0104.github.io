@@ -14,7 +14,7 @@ excerpt: 'java.lang.String의 replace(), replaceAll()'
 
 주어진 문자열을 선형탐색하면서 숫자가 아닌 문자가 나오면 매칭되는 숫자가 나올 때까지 별도의 index 변수와 while을 이용해서 내부에서도 선형탐색을 하는 방법으로 풀었다.
 
-문제를 풀고 나서 다른 분들의 풀이를 보았는데 매우 간략하게 잘 푸신 분들이 많았다. 그 중 특이한 점은 replaceAll()과 replace()를 사용한 풀이가 비슷한 비율로 존재했다는 것이다. 그런데 생각해보니 replace()도 분명히 메소드를 호출한 String에서 인자로 들어온 대상을 모두 바꿨던 것 같은 기억이 났다. 그래서 replaceAll()로 작성된 풀이를 replace()로 바꿔서 제출해도 모두 합격이 되는 것이다!
+문제를 풀고 나서 다른 분들의 풀이를 보았는데 매우 간략하게 푸신 분들이 많았다. 그 중 특이한 점은 replaceAll()과 replace()를 사용한 풀이가 비슷한 비율로 존재했다는 것이다. 그런데 생각해보니 replace()도 분명히 메소드를 호출한 String에서 인자로 들어온 대상을 모두 바꿨던 것이 기억이 났다. 그래서 replaceAll()로 작성된 풀이를 replace()로 바꿔서 제출해 보았는데 모두 통과가 되었다. 즉, replace() 와 replaceAll()가 알고리즘 구현에 영향을 미치지 않은 것이다!
 
 그래서 replace()와 replaceAll() 메소드와 차이점이 확실히 무엇인지 궁금하다는 생각을 했고 Java API 공식문서를 찾아보았다.
 
@@ -104,7 +104,7 @@ char 단위가 아니라 charSequence에 대해서 당연히 가능하다. 따�
 
 당연한 이야기이지만 replace에 정규표현식처럼 [a-z]를 target 파라미터로 주면 charSequence이기 때문에 "[a-z]"와 일치하는 문자열을 찾아 바꾸게 된다. "Hello Hello new World"에는 "[a-z]"가 없기 때문에 당연히 그대로 리턴하게 된다.
 
-- replaceAll()
+- **replaceAll()**
 ```java
 // replaceAll
 
@@ -113,7 +113,7 @@ public String replaceAll(String regex, String replacement) {
     }
 ```
 
-- replace()
+- **replace()**
 ```java
 // replace
 
@@ -154,4 +154,4 @@ replaceAll()과 다르게 **첫번째**로 매치되는 substring만 replacement
 
 replace()와 replaceAll()의 차이에 대해 알아보았다. 위의 문제처럼 단순히 연속된 형태의 문자열을 변환하기 위한 것이라면 replaceAll()을 굳이 사용하지 않고 replace()를 사용해도 충분하다는 생각이 든다. char를 한 번에 찾고자 할 때 혹은 여러 문자열들을 정규표현식으로 표현하여 한 번에 바꾸는 것처럼 정규표현식이 유용한 순간에는 replaceAll() 혹은 replaceFirst()를 사용하면 될 것 같다. 
 
-**공부를 하다보니 프로그래밍 언어를 개발하는 분들에 대한 존경심이 마구마구 생겼으며, 혹시 미래에 그런 경험을 할 수 있다면 정말 재밌을 것 같다는 생각이 들었다.**
+**공부를 하다보니 프로그래밍 언어를 개발하는 분들에 대한 존경심이 생겼으며, 혹시 미래에 그런 경험을 할 수 있다면 정말 재밌을 것 같다는 생각이 들었다.**
