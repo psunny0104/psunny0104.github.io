@@ -31,16 +31,16 @@ date: 2021-08-31 12:19:30
 
 # 🏢 Experience
 
-* Full-time Software Engineer at [KT](https://corp.kt.com/) (20.07 ~ 21.02)
-* Intern Software Engineer at [KT](https://corp.kt.com/) (20.01 ~ 20.02)
+* [KT](https://corp.kt.com/)에서 Software Engineer 정규직으로 재직했습니다. (20.07 ~ 21.02)
+* [KT](https://corp.kt.com/)애서 Software Engineer 인턴으로 재직했습니다. (20.01 ~ 20.02)
 
 
 
 # 🏫 Education
 
-* [boostcamp](https://boostcamp.connect.or.kr/) 웹·모바일 6기 by [NAVER Connect Fdn.](https://connect.or.kr/) (21.07 ~ )
-* 대학생 알고리즘 특강 by [삼성SDS](https://www.samsungsds.com/kr/index.html) (19.07)
-* 공학사 학위 - 소프트웨어 및 컴퓨터공학 전공 at [Ajou Univ.](https://www.ajou.ac.kr/kr/index.do) (14.03 ~ 20.08)
+* [NAVER Connect Fdn.](https://connect.or.kr/)에서 주최하는 [boostcamp](https://boostcamp.connect.or.kr/) 웹·모바일 6기에 참여중입니다. (21.07 ~ )
+* [삼성SDS](https://www.samsungsds.com/kr/index.html)에서 주최하는 대학생 알고리즘 특강에 참여했습니다. (19.07)
+* [Ajou Univ.](https://www.ajou.ac.kr/kr/index.do)에서 공학사 학위(소프트웨어 및 컴퓨터공학 전공)를 받았습니다. (14.03 ~ 20.08)
 
 
 
