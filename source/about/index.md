@@ -32,7 +32,7 @@ date: 2021-08-31 12:19:30
 # 🏢 Experience
 
 * [KT](https://corp.kt.com/)에서 Software Engineer 정규직으로 재직했습니다. (20.07 ~ 21.02)
-* [KT](https://corp.kt.com/)애서 Software Engineer 인턴으로 재직했습니다. (20.01 ~ 20.02)
+* [KT](https://corp.kt.com/)에서 Software Engineer 인턴으로 재직했습니다. (20.01 ~ 20.02)
 
 
 
